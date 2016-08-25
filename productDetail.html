@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+   	<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+   	<title>产品信息</title>
+    
+    <link rel="stylesheet" href="css/flexslider.css" />
+    <!--App自定义的css-->
+    <link href="css/app.css" rel="stylesheet"/>
+    
+</head>
+<body >
+	<!--头部标题-->
+	<header >
+		<a id="head_left" onclick="location.href='javascript:history.go(-1);'">&nbsp;</a>
+		产品信息
+		<div id="head_right">
+			<div style="height: 50%;"><img src="images/head_left.png" style="height: 0.26rem;padding: 0.15rem 0 0 0.15rem;" /></div>
+			<div style="height: 50%;line-height: 0.43rem;font-size: 0.2rem;">分享</div>
+		</div>
+	</header>
+	<!--头部标题结束-->
+	<!--轮播图-->
+	<div class="flexslider" style="margin:0;width: 100%;display: block;">
+  		<ul class="slides" >
+  			 <li><img style="width:100%;height:auto;"src="images/1.jpg" onclick="#" /></li>
+  			 <li><img style="width:100%;height:auto;"src="images/2.jpg" onclick="#" /></li>
+  		</ul>
+	</div>
+	<!--轮播图结束-->
+	
+	<section >
+		<div>
+			<dl>
+				<dt class="fs36 c-dark">黄金玉琉璃卫生间专业瓷砖</dt>
+				<dd class="fs30 c-gray">型号：GR803056F</dd>
+				<dd class="fs30 c-gray" style="width: 50%;">规格：800*800</dd>
+				<dd class="fs32 c-yellow" style="width: 50%;text-align: right;margin-top: 0.15rem;"><span class="fs48">￥40</span> 元/片</dd>
+			</dl>
+			<dl>
+				<dt class="fs36 c-dark">黄金玉琉璃卫生间专业瓷砖</dt>
+				<dd class="fs30 c-gray">型号：GR803056F</dd>
+				<dd class="fs30 c-gray" style="width: 50%;">规格：800*800</dd>
+				<dd class="fs32 c-yellow" style="width: 50%;text-align: right;margin-top: 0.15rem;"><span class="fs48">￥40</span> 元/片</dd>
+			</dl>
+		</div>
+		<div style="width: 100%;float: left;height: 0.174rem;background: #1F5F6F; ">11</div>
+			
+		
+	</section>
+	
+	
+	
+	
+	
+</body>
+
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script>	
+	<script src="js/jquery.flexslider-min.js"></script>
+	
+	<script type="text/javascript" charset="utf-8">
+		///避免进来js导致的闪动效果
+		$(".avoidShine").css("display","block");
+			
+		///轮播图
+		$(function() {
+		    $(".flexslider").flexslider({
+				slideshowSpeed: 4000, //展示时间间隔ms
+				animationSpeed: 400, //滚动时间ms
+				touch: true //是否支持触屏滑动
+			});
+		});
+	</script>
+</html>

@@ -1,0 +1,824 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 375%;
+}
+body {
+	width:100%;
+	font-family: "方正兰亭纤黑简体","微软雅黑","microsoft yahei";
+	background: #F3F3F3;
+}
+button {
+	font-family: "方正兰亭纤黑简体","微软雅黑","microsoft yahei";
+}
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+	display: block;
+}
+ol,ul {
+	list-style: none;
+}
+header {
+	width: 100%;
+	height: 0.88rem;
+	line-height: 0.88rem;
+	text-align: center;
+	font-weight: bold;
+	font-size: 0.32rem;
+	background: #CC0000;
+	color: #FFFFFF;
+	position: fixed;
+	top: 0;
+	z-index: 999999999999;
+}
+header .head_up {
+	display: block;
+	margin: 0.24rem 0 0 0.2rem;
+	position: absolute;
+	z-index: 1;
+	width: 0.8rem;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	text-align: right;
+	background: url(../img/head_up.png) no-repeat left center;
+	font-size: 0.28rem;
+	color: #FFFFFF;
+}
+header #head_menu {
+	display: block;
+	position: absolute;
+	right: 0.32rem;
+	top: 0.24rem;
+	z-index: 2;
+	width: 0.34rem;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	text-align: right;
+	background: url(../img/head_menu.png) no-repeat left center;
+	font-size: 0.28rem;
+	color: #FFFFFF;
+}
+section {
+	padding: 0.24rem 0;
+	/* margin-top: 0.88rem; */
+}
+span {
+	display: inline-block;
+}
+button {
+	width: 87%;
+	margin:0.48rem 0 0.48rem 8%;
+	float: left;
+	height: 0.56rem;
+	line-height: 0.56rem;
+	font-size: 0.25rem;
+	color: #FFFFFF;
+	border: none;
+	border-radius: 0.05rem;
+}
+.c_but48 {
+	margin-bottom: 0;
+}
+.bg_yellow {
+	background: #FCA91F;
+}
+.bg_red {
+	background: #CC0000;
+}
+.clear {
+	clear: both;
+}
+.c-blue {
+	color: #0099FF;
+}
+.c-yellow {
+	color: #FCA91F;
+}
+.c-red {
+	color: #CC0000;
+}
+.c-green {
+	color:#00CC33;
+}
+.c-gray {
+	color: #999999;
+	font-size:10px;
+}
+.progressbar_3{
+	font-size: 0.15rem;
+	background-color: #eee;
+	color: #CC0000;
+	height: 0.24rem;
+	line-height: 0.24rem;
+	width: 100%;
+	border: 1px solid #C19F62;
+	text-align: center;
+	position: relative;
+} 
+.progressbar_3 .bar { 
+    background-color:#F1C57E; 
+    height:0.24rem; 
+    line-height: 0.24rem;
+    width:0; 
+    position:absolute; 
+    left:0; 
+    top:0; 
+    z-index:10; 
+} 
+.progressbar_3 .text { 
+    height:0.24rem; 
+    line-height: 0.24rem;
+    position:absolute; 
+    left:0; 
+    top:0; 
+    width:100%; 
+    z-index:100; 
+} 
+/*夺宝记录*/
+#dbjl dl {
+	float: left;
+	margin-left: 5%;
+	margin-bottom: 0.3rem;
+	padding: 0.22rem 0;
+	width: 90%;
+	border: 1px solid #DBD0D7;
+	background: #FFFFFF;
+}
+#dbjl dt img{
+	width:29%;
+	height:auto;
+	margin-left: 0.2rem;
+	margin-right: 0.2rem;
+	float: left;
+}
+#dbjl dd {
+	float: right;
+	width: 62%;
+	line-height: 170%;
+	font-size: 0.20rem;
+	color: #333;
+}
+#dbjl dd span {
+	position: relative;
+	left: 0.1rem;
+}
+/*开奖信息*/
+#kjxx dl {
+	float: left;
+	margin-left: 5%;
+	margin-bottom: 0.3rem;
+	padding: 0.22rem 0;
+	width: 90%;
+	border: 1px solid #DBD0D7;
+	background:#FFFFFF url(../img/kjxx_line.jpg) repeat-x center 1.68rem;
+}
+#kjxx dl p {
+	width: 90%;
+	float: left;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	font-size: 0.28rem;
+	font-weight: bold;
+	text-align: center;
+	margin-right: 0.32rem;
+	margin-top: 0.28rem;
+}
+#kjxx dl p #jb {
+	display: inline-block;
+	width:1.7rem;
+	height: 0.5rem;
+	background:url(../img/kjxx_jb.jpg) no-repeat;
+	text-align: right;
+}
+#kjxx dt {
+	height: 1.6rem;
+	float: left;
+	margin-left: 0.24rem;
+}
+#kjxx dt img{
+	width: 0.75rem;
+	height: 0.75rem;
+	border-radius: 50%;
+	padding: 0.05rem;
+	border: 1px solid #DDE0E7;
+	margin-right: 0.15rem;
+	float: left;
+}
+#kjxx dd {
+	float: left;
+	width: 74%;
+	line-height: 150%;
+	font-size: 0.15rem;
+	color: #333;
+}
+/*易手区交易记录*/
+#esqjl dl {
+	float: left;
+	margin-left: 5%;
+	margin-bottom: 0.3rem;
+	padding: 0.22rem 0;
+	width: 90%;
+	border: 1px solid #DBD0D7;
+	background: #FFFFFF;
+}
+#esqjl dt img{
+	width:29%;
+	height:auto;
+	margin-left: 0.2rem;
+	margin-right: 0.2rem;
+	float: left;
+}
+#esqjl dd {
+	float: right;
+	width: 62%;
+	line-height: 170%;
+	font-size: 0.20em;
+	color: #333;
+}
+/*中奖记录*/
+#zjjl dl {
+	float: left;
+	margin-left: 5%;
+	margin-bottom: 0.3rem;
+	padding: 0.22rem 0;
+	width: 90%;
+	border: 1px solid #DBD0D7;
+	background: #FFFFFF;
+}
+#zjjl dt img{
+	width:29%;
+	height:auto;
+	margin-left: 0.2rem;
+	margin-right: 0.2rem;
+	float: left;
+}
+#zjjl dd {
+	float: right;
+	width: 62%;
+	line-height: 130%;
+	font-size: 0.20rem;
+	color: #333;
+}
+#zjjl dd a {
+	display: inline-block;
+	margin-top: 0.06rem;
+	color: #0099FF;
+	font-size: 0.18rem;
+}
+/*充值记录*/
+#czjl dl {
+	float: left;
+	margin-left: 5%;
+	margin-bottom: 0.3rem;
+	padding: 0.22rem 0;
+	width: 90%;
+	border: 1px solid #DBD0D7;
+	background: #FFFFFF;
+}
+#czjl dd {
+	float: left;
+	width: 90%;
+	line-height: 250%;
+	font-size: 0.25rem;
+	color: #333;
+	margin-left: 5%;
+}
+#czjl dd span {
+	display: inline-block;
+	position: absolute;
+	right: 10%;
+}
+/*提现记录*/
+#txjl dl {
+	float: left;
+	margin-left: 3%;
+	margin-bottom: 0.3rem;
+	padding: 0.22rem 0;
+	width: 94%;
+	border: 1px solid #DBD0D7;
+	background: #FFFFFF;
+}
+#txjl dd {
+	float: left;
+	width: 90%;
+	line-height: 250%;
+	font-size: 0.25rem;
+	color: #333;
+	margin-left: 2%;
+}
+#txjl dd span {
+	display: inline-block;
+	position: absolute;
+	right: 6%;
+}
+/*确认兑换*/
+#qrdh dl {
+	margin-left: 5%;
+	float: left;
+	margin-bottom: 0.3rem;
+	padding: 0.24rem 0 0.48rem;
+	width: 90%;
+	border-bottom: 1px solid #DDE0E7;
+}
+#qrdh dd a {
+	float:right;
+}
+#qrdh dt img{
+	width:2.08rem;
+	height:2.08rem;
+	margin-left: 0.2rem;
+	margin-right: 0.2rem;
+	float: left;
+}
+#qrdh dd {
+	float: left;
+	width: 48%;
+	line-height: 200%;
+	font-size: 0.25rem;
+	color: #333;
+}
+#qrdh dd span {
+	position: relative;
+	left: 0.1rem;
+}
+#qrdh ul{
+	margin-left: 8%;
+	float: left;
+	width:84%;
+	font-size: 0.25rem;
+	padding-bottom: 0.2rem;
+	border-bottom: 1px solid #DDE0E7;
+}
+#qrdh ul li {
+	line-height: 250%;
+}
+#qrdh ul li span {
+	font-size: 0.35rem;
+}
+#qrdh ul li a{
+	float: right;
+}
+/*确认夺宝*/
+#qrdb dl {
+	margin-left: 5%;
+	float: left;
+	margin-bottom: 0.3rem;
+	padding: 0.24rem 0 0.48rem;
+	width: 90%;
+	border-bottom: 1px solid #DDE0E7;
+}
+#qrdb dd a {
+	float:right;
+}
+#qrdb dt img{
+	width:2.08rem;
+	height:2.08rem;
+	margin-left: 0.2rem;
+	margin-right: 0.2rem;
+	float: left;
+}
+#qrdb dd {
+	float: left;
+	width: 48%;
+	line-height: 125%;
+	font-size: 0.25rem;
+	color: #333;
+}
+#qrdb dd span {
+	position: relative;
+	left: 0;
+	top: 0.07rem;
+}
+#qrdb dd input {
+	display: inline-block;
+}
+#qrdb ul{
+	margin-left: 5%;
+	padding-left:2%;
+	float: left;
+	width:88%;
+	font-size: 0.25rem;
+	padding-bottom: 0.2rem;
+	border-bottom: 1px solid #DDE0E7;
+}
+#qrdb ul li {
+	line-height: 250%;
+}
+#qrdb ul li span {
+	font-size: 0.35rem;
+}
+#qrdb ul li a{
+	float: right;
+}
+/*商品详情*/
+#spxq {
+	margin-top: 0;
+}
+#spxq dl {
+	width: 84%;
+	float: left;
+	margin-left: 8%;
+}
+#spxq dl dt {
+	font-size: 0.28rem;
+	font-weight: bold;
+	margin-bottom: 0.25rem;
+}
+#spxq ul{
+	float: left;
+	width: 84%;
+	margin-left: 8%;
+	border-bottom: 1px solid #DDE0E7;
+	font-size: 0.25rem;
+	padding: 0 0 0.22rem;
+}
+#spxq ul li {
+	font-size: 0.2rem;
+	width:33.33%;
+	float: left;
+	line-height: 130%;
+	margin-top: 0.18rem;
+	color: #7F7F7F;
+}
+#foot_but {
+	width: 100%;
+	position: absolute;
+	bottom:0px
+}
+#foot_but li{
+	width:50%;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 0.28rem;
+	font-weight: bold;
+	float: left;
+}
+/*商品详情1*/
+#spxq1 {
+	margin-top: 0;
+}
+#spxq1 ul{
+	float: left;
+	width: 100%;
+	border-bottom: 1px solid #DDE0E7;
+	font-size: 0.25rem;
+	padding: 0 0 0.22rem;
+}
+#spxq1 ul li {
+	width:84%;
+	float: left;
+	margin-left: 8%;
+	line-height: 250%;
+}
+#spxq1 dl {
+	float: left;
+	width: 100%;
+	border-bottom: 1px solid #DDE0E7;
+	font-size: 0.25rem;
+	padding: 0.22rem 0;
+}
+#spxq1 dl dt {
+	width:84%;
+	float: left;
+	margin-left: 8%;
+	font-weight: bold;
+	padding-bottom: 0.1rem;
+	
+}
+#spxq1 dl dd {
+	width:100%;
+	float: left;
+	line-height: 200%;
+	text-indent: 0.44rem;
+}
+/*商品详情2*/
+#spxq2 {
+	margin-top: 0;
+}
+#spxq2 ul{
+	float: left;
+	width: 100%;
+	border-bottom: 1px solid #DDE0E7;
+	font-size: 0.25rem;
+	padding: 0 0 0.22rem;
+}
+#spxq2 ul li {
+	width:84%;
+	float: left;
+	margin-left: 8%;
+	line-height: 250%;
+}
+#spxq2 dl {
+	float: left;
+	width: 100%;
+	border-bottom: 1px solid #DDE0E7;
+	font-size: 0.25rem;
+	padding: 0.22rem 0;
+}
+#spxq2 dl dt {
+	width:84%;
+	float: left;
+	margin-left: 8%;
+	font-weight: bold;
+	padding-bottom: 0.1rem;
+	
+}
+#spxq2 dl dd {
+	width:100%;
+	float: left;
+	line-height: 200%;
+	text-indent: 0.44rem;
+}
+/*现金提现*/
+#xjtx ul{
+	margin-left: 8%;
+	float: left;
+	width:84%;
+	font-size: 0.22rem;
+	padding-top: 0.2rem;
+}
+#xjtx ul li {
+	line-height: 300%;
+}
+#xjtx ul li span {
+	font-size: 0.22rem;
+}
+#xjtx ul li input{
+	width:70%;
+	height: 0.36rem;
+	line-height: 0.36rem;
+	border: 1px solid #CCCCCC;
+	text-align: center;
+	font-size: 0.2rem;
+}
+#xjtx ul li select{
+	width:70%;
+	height: 0.36rem;
+	line-height: 0.36rem;
+	border: 1px solid #CCCCCC;
+	text-align: center;
+	font-size: 0.2rem;
+}
+/*我的地址*/
+#wddz ul{
+	margin-left: 5%;
+	float: left;
+	width:90%;
+	font-size: 0.22rem;
+	padding-top: 0.2rem;
+}
+#wddz ul li {
+	line-height: 380%;
+}
+#wddz ul li span {
+	font-size: 0.25rem;
+}
+#wddz ul li input{
+	width:60%;
+	height: 0.48rem;
+	line-height: 0.48rem;
+	border: 1px solid #CCCCCC;
+	text-align: center;
+	font-size: 0.25rem;
+}
+#wddz ul li select {
+	width: 22%;
+	height: 0.48rem;
+	margin-right: 2.2%;
+	font-size: 0.2rem;
+	border: 1px solid #CCCCCC;
+}
+#wddz ul li textarea {
+	width:72%;
+	height: 1.4rem;
+	font-size: 0.2rem;
+	border: 1px solid #CCCCCC;
+	margin-top: 0.12rem;
+}
+/*账户充值*/
+#zhcz dl {
+	float: left;
+	margin-bottom: 0.36rem;
+	padding: 0.24rem 0 0.48rem;
+	width: 100%;
+	border-bottom: 1px solid #DDE0E7;
+}
+#zhcz dd a {
+	float:right;
+	margin-right: 10px;
+}
+#zhcz dt img{
+	width:1.82rem;
+	height:1.82rem;
+	margin-left: 4.5%;
+	margin-right: 0.2rem;
+	float: left;
+	padding: 0.06rem;
+	border: 1px solid #DDDDDD;
+}
+#zhcz dd {
+	float: left;
+	width: 52%;
+	line-height: 160%;
+	font-size: 0.20rem;
+	color: #333;
+	margin-left: 2%;
+}
+#zhcz dd a {
+	float: right;
+	font-size: 0.2rem;
+	color: #0099FF;
+}
+#zhcz p{
+	width: 100%;
+	text-align: center;
+	font-size: 0.3rem;
+	color: #666;
+	font-weight: bold;
+	margin-bottom: 0.2rem;
+}
+#zhcz ul{
+	margin-left: 8%;
+	float: left;
+	width:86%;
+	font-size: 0.22rem;
+	border: 1px solid #DDE0E7;
+}
+#zhcz ul li{
+	float: left;
+	width:19.5%;
+	border-right: 1px solid #DDE0E7;
+	line-height: 250%;
+}
+#zhcz ul li:nth-child(5) {
+	border-right:none;
+}
+#zhcz ul li a {
+	width:100%;
+	text-align: center;
+	display: block;
+	color: #0099FF;
+}
+/*个人中心*/
+#grzx dl {
+	float: left;
+	padding: 0.24rem 0 0.48rem;
+	width: 100%;
+	border-bottom: 1px solid #DDE0E7;
+}
+#grzx dd a {
+	float:right;
+	margin-right: 10%;
+}
+#grzx dt {
+	width: 40%;
+	float: left;
+}
+#grzx dt img{
+	width:80%;
+	height: auto;
+	margin-left: 8%;
+	margin-right: 0.2rem;
+	float: left;
+	padding: 0.06rem;
+	border: 1px solid #DDDDDD;
+}
+#grzx dl p {
+	float:left;
+	width:60%;
+}
+#grzx dd {
+	line-height: 160%;
+	font-size: 0.22rem;
+	color: #333;
+	margin-left: 2.5%;
+}
+#grzx dd a {
+	float: right;
+	font-size: 0.2rem;
+	color: #0099FF;
+}
+#grzx ul{
+	float: left;
+	width:100%;
+	font-size: 0.2rem;
+}
+#grzx ul li{
+	float: left;
+	width:33%;
+	height: 2rem;
+	word-break:keep-all;
+	border-right: 1px solid #DDE0E7;
+	border-bottom: 1px solid #DDE0E7;
+	line-height: 250%;
+}
+#grzx ul li:nth-child(3n) {
+	border-right:none;
+}
+#grzx ul>li>a {
+	font-size:0.22rem;
+	margin: 0.5rem 10%;
+	width:80%;
+	height: 50%;
+	line-height: 800%;
+	text-align: center;
+	display: block;
+	color: #333;
+}
+/*晒单分享*/
+#sdfx {
+	width: 90%;
+	padding: 0 5%;
+	margin-bottom: 0.4rem;
+	float: left;
+}
+.sd {
+	width:100%;
+	height: auto;
+	float: left;
+	margin: 0.4rem 0 0;
+}
+.sd h6 {
+	float: left;
+	width:15%;
+	height: auto;
+	margin-right: 0.34rem;
+}
+.sd h6 img {
+	width: 90%;
+	height: auto;
+	border-radius: 50%;
+	padding: 0.06rem;
+	border: 1px solid #DDE0E7;
+}
+.sd h5 {
+	float: left;
+	width: 68%;
+	padding: 3%;
+	background: #FFFFFF;
+	border-radius:0.08rem ;
+	border: 1px solid #DDE0E7;
+}
+.sd h5 dl{
+	width: 100%;
+	float: left;
+}
+.sd h5 dl dt{
+	font-size: 0.28rem;
+}
+.sd h5 dl dt a {
+	color: #000000;
+	font-weight: bold;
+}
+.sd h5 dl dd {
+	text-align: right;
+	font-weight: 500;
+	font-size: 0.22rem;
+	color: #797979;
+	margin: 0.16rem 0;
+	width: 50%;
+	float: left;
+}
+.sd h5 p{
+	font-weight: 500;
+	font-size:0.22rem;
+	line-height: 150%;
+	text-indent: 0.3rem;
+	color: #585858;
+}
+.sd h5 ul {
+	margin-top: 0.2rem;
+}
+.sd h5 ul li {
+	width:30%;
+	height:auto;
+	float: left;
+	margin:0.05rem;
+}
+/*一元夺宝区*/
+#yydbq {
+	width: 100%;
+	margin-top: 0;
+}
+/*半折夺宝区*/
+#bzq {
+	width: 100%;
+	margin-top: 0;
+}
+/*易手区*/
+#esq {
+	width: 100%;
+	margin-top: 0;
+}
+/*积分商城*/
+#jfsc {
+	width: 100%;
+	margin-top: 0;
+}
