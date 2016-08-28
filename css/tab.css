@@ -76,6 +76,7 @@
 .product-wrap .show {
 	display: block;
 	margin-bottom: 0.87rem;
+	width: 100%;
 }
 /*.product-wrap ol {
 	width:100%;

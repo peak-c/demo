@@ -20,6 +20,7 @@ body {
 img {
 	max-width: 100%;
 	display: block;
+	no-repeat left center;
 }
 .bg_default {
 	background: #FB673C;
@@ -64,6 +65,9 @@ img {
 .fs30{
 	font-size: 0.26rem;
 }
+.fs28{
+	font-size: 0.243rem;
+}
 .fs24{
 	font-size: 0.208rem;
 }
@@ -85,6 +89,13 @@ img {
 	border-bottom: 1px solid #EDEDED;
 	border-top: 1px solid #EDEDED;
 }
+
+.justify{
+	text-align:justify;
+	text-justify:distribute-all-lines;
+	text-align-last:justify;
+}
+
 
 header {
 	width: 100%;
