@@ -18,6 +18,10 @@ body {
 	margin: 0 auto;
 	overflow-x: hidden;/*禁用左右滚动条*/
 }
+a{
+	
+	text-decoration:none;
+}
 img {
 	max-width: 100%;
 	display: block;
