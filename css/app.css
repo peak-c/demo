@@ -2,12 +2,9 @@
 	margin: 0;
 	padding: 0;
 }
-html,body{
-    height: 100%;
-    width: 100%;
-}
 html {
 	font-size: 375%;
+	height: 100%;
 }
 body {
 	font-family: "微软雅黑","microsoft yahei","方正兰亭纤黑简体";
@@ -16,7 +13,10 @@ body {
 	color: #333333;
 	display: block;
 	margin: 0 auto;
+	width: 100%;
 	overflow-x: hidden;/*禁用左右滚动条*/
+	left：0;
+	right：0;
 }
 a{
 	
@@ -84,6 +84,9 @@ img {
 }
 .fs16{
 	font-size: 0.137rem;
+}
+section {
+	width: 100%;
 }
 /**分割块*/
 .segment{
