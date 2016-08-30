@@ -16,6 +16,7 @@ body {
 	color: #333333;
 	display: block;
 	margin: 0 auto;
+	overflow-x: hidden;/*禁用左右滚动条*/
 }
 img {
 	max-width: 100%;
@@ -89,7 +90,7 @@ img {
 	border-bottom: 1px solid #EDEDED;
 	border-top: 1px solid #EDEDED;
 }
-
+/**分散对齐*/
 .justify{
 	text-align:justify;
 	text-justify:distribute-all-lines;
