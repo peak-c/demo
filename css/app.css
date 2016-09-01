@@ -24,6 +24,7 @@ a{
 }
 img {
 	max-width: 100%;
+	max-height: 100%;
 	display: block;
 	no-repeat left center;
 }
@@ -165,7 +166,14 @@ footer {
 	bottom: 0;
 	z-index: 11;
 }
-
+/*轮播图*/
+.flexslider{
+	width: 100%;
+	margin-top: 0.87rem;
+}
+.flexslider .slides img{
+	height:3.47rem;
+}
 
 /*产品信息*/
 #cpxx dl {
