@@ -37,6 +37,9 @@ img {
 .bg_white {
 	background: #FFFFFF;
 }
+.bg_gray{
+	background:#ECECEC;
+}
 
 .clear {
 	clear: both;
@@ -61,6 +64,9 @@ img {
 
 .fs48{
 	font-size: 0.417rem;
+}
+.fs40{
+	font-size: 0.347rem;
 }
 .fs36{
 	font-size: 0.3125rem;
@@ -88,6 +94,7 @@ img {
 }
 section {
 	width: 100%;
+	margin: 0 auto;
 }
 /**分割块*/
 .segment{
@@ -166,6 +173,8 @@ footer {
 	bottom: 0;
 	z-index: 11;
 }
+
+
 /*轮播图*/
 .flexslider{
 	width: 100%;
@@ -193,4 +202,60 @@ footer {
 	width: 100%;
 	margin-top: 0.25rem;
 	float: left;
+}
+
+
+/*企业信息*/
+#qyxx{
+	padding: 4.15%;
+	width: 91.7% ;
+	padding-top: 0;
+	text-align: center;
+}
+#qyxx div{
+	margin: 0 auto;
+}
+
+#qyxx #logo {
+	border-radius: 50%;
+	width: 1.58rem;
+	height: 1.58rem;
+	border:1px #DCDCDC solid; 
+	background:#ECECEC;
+	text-align: center;
+	margin: 0.26rem auto;
+	-webkit-box-shadow: #DCDCDC 0px 0px 5px;
+	-moz-box-shadow: #DCDCDC 0px 0px 5px;
+	box-shadow: #DCDCDC 0px 0px 5px;
+}
+#qyxx .xinxi{
+	width: 48%;
+	float: left;
+	margin-top:0.26rem ;
+	margin-bottom: 0.347rem;
+	line-height: 0.4rem;
+	color: #FFFFFF;
+	font-size: 0.243rem;
+}
+#qyxx .xinxi div{
+	width: 92%;
+	background: #FE6732;
+	border-radius: 8px;
+	margin: 0 auto;
+}
+
+#qyxx .fengexian{
+	width: 35%;
+	overflow:hidden;
+	white-space:nowrap;
+	float: left;
+	line-height: 0.4rem;
+	color: #999999;
+}
+#qyxx .jianjie{
+	float: left;
+	margin-top: 0.347rem;
+	margin-bottom: 0.347rem;
+	text-align: left;
+	font-weight:bold;
 }
