@@ -178,7 +178,7 @@ footer {
 /*轮播图*/
 .flexslider{
 	width: 100%;
-	margin-top: 0.87rem;
+	/*margin-top: 0.87rem;*/
 }
 .flexslider .slides img{
 	height:3.47rem;
@@ -258,4 +258,24 @@ footer {
 	margin-bottom: 0.347rem;
 	text-align: left;
 	font-weight:bold;
+}
+
+/*企业信息*/
+#qy_info dl {
+	padding: 0.21rem 0rem 0.21rem 0rem;
+	float: left;
+	width: 91.7% ;
+	margin-bottom: 0.174rem;
+	height: 1.78rem;
+	margin: 0 auto;
+	margin-left: 4.15%;
+}
+#qy_info dt {
+	width: 100%;
+	float: left;
+}
+#qy_info dd {
+	width: 100%;
+	margin-top: 0.25rem;
+	float: left;
 }
